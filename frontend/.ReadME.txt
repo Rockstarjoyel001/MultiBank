@@ -1,0 +1,82 @@
+# Real-Time Trading Dashboard
+
+## 📌 Overview
+This project is a real-time trading dashboard built using React and TypeScript.  
+It displays live market data using a combination of REST APIs and WebSocket streams.
+
+---
+
+## ⚙️ Tech Stack
+- React + TypeScript
+- Recharts (for charting)
+- WebSocket (real-time updates)
+- Node.js (mock backend)
+
+---
+
+## 🚀 Features
+- Live ticker price updates
+- Real-time chart visualization
+- Ticker selection
+- Responsive dashboard layout
+
+---
+
+## 🧠 Architecture & Design
+
+- REST API used for:
+  - Initial ticker list
+  - Historical data
+
+- WebSocket used for:
+  - Real-time price updates
+
+- Custom Hook:
+  - `useWebSocket` manages connection lifecycle
+
+- Separation of concerns:
+  - components/
+  - hooks/
+  - services/
+  - types/
+
+---
+
+## ⚡ Assumptions
+- Market data is simulated
+- No persistent storage required
+- Single-user system
+
+---
+
+## ⚖️ Trade-offs
+- Used in-memory state instead of global store (Redux)
+- Focused on simplicity and clarity over scalability
+- Basic styling instead of full UI framework
+
+---
+
+## ▶️ Setup Instructions
+
+### Backend
+cd backend  
+npm install  
+npm start  
+
+### Frontend
+cd frontend  
+npm install  
+npm run dev  
+
+---
+
+## ⭐ Bonus Features
+- Real-time chart updates
+- Clean UI layout
+- Modular architecture
+
+---
+
+## 📷 Notes
+- WebSocket reconnection can be further improved
+- UI can be enhanced with animations or theming
